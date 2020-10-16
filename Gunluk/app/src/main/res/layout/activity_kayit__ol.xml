@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Kayit_Ol">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <include
+            android:id="@+id/action_barKayitt"
+            layout="@layout/action_bar"
+            android:layout_marginTop="8dp"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent">
+
+        </include>
+
+        <TextView
+            android:id="@+id/txtAdKayitOl"
+            android:layout_width="67dp"
+            android:layout_height="17dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="196dp"
+            android:text="İsim :"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/action_barKayitt" />
+
+        <EditText
+            android:id="@+id/edtxIsimKayitOl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="196dp"
+            android:layout_marginEnd="72dp"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:hint="Name"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.771"
+            app:layout_constraintStart_toEndOf="@+id/txtAdKayitOl"
+            app:layout_constraintTop_toBottomOf="@+id/action_barKayitt" />
+
+        <TextView
+            android:id="@+id/txtKullaniciAdiKayitOl"
+            android:layout_width="wrap_content"
+            android:layout_height="18dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="48dp"
+            android:text="Kullanıcı Adı :"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtAdKayitOl" />
+
+        <EditText
+            android:id="@+id/edtxKullaniciAdiKayitOl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="72dp"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:hint="Kullanıcı Adı"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.79"
+            app:layout_constraintStart_toEndOf="@+id/txtKullaniciAdiKayitOl"
+            app:layout_constraintTop_toBottomOf="@+id/edtxIsimKayitOl" />
+
+        <TextView
+            android:id="@+id/txtSifreKayitOl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginEnd="8dp"
+            android:text="Şifre :"
+            app:layout_constraintEnd_toStartOf="@+id/edtxSifreKayitOl"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtKullaniciAdiKayitOl" />
+
+        <TextView
+            android:id="@+id/txtSifreKontrol"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:text="Şifre Tekrarı :"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtSifreKayitOl"
+            app:layout_constraintVertical_bias="0.082" />
+
+        <EditText
+            android:id="@+id/edtxSifreKayitOl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="80dp"
+            android:ems="10"
+            android:inputType="textPassword"
+            android:hint="Şifre"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/edtxKullaniciAdiKayitOl" />
+
+        <EditText
+            android:id="@+id/edtxSifreTekrariKayitOl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="12dp"
+            android:ems="10"
+            android:inputType="textPassword"
+            android:hint="Şifre Tekrar"
+            app:layout_constraintStart_toEndOf="@+id/txtSifreKontrol"
+            app:layout_constraintTop_toBottomOf="@+id/edtxSifreKayitOl" />
+
+        <Button
+            android:id="@+id/btnKaydetKayitOl"
+            android:layout_width="112dp"
+            android:layout_height="67dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="8dp"
+            android:text="KAYDET"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.537"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/edtxSifreTekrariKayitOl"
+            app:layout_constraintVertical_bias="0.081" />
+
+    </android.support.constraint.ConstraintLayout>
+
+
+
+</android.support.design.widget.CoordinatorLayout>
